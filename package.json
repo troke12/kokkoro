@@ -1,0 +1,30 @@
+{
+  "name": "kokkoro",
+  "version": "1.0.0",
+  "description": "A simple Pricone-Bot by troke12",
+  "main": "kokkoro.js",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "mysql": "^2.18.1",
+    "randomcolor": "^0.6.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troke12/kokkoro.git"
+  },
+  "keywords": [
+    "pricone"
+  ],
+  "author": "troke12",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/troke12/kokkoro/issues"
+  },
+  "homepage": "https://github.com/troke12/kokkoro#readme"
+}

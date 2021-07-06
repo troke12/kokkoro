@@ -1,0 +1,13 @@
+{
+    "bot": {
+        "token": "",
+        "prefix": "k!"
+    },
+    "db": {
+        "host":"",
+        "port":"",
+        "username":"",
+        "password":"",
+        "database":""
+    }
+}
