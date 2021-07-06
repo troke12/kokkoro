@@ -52,6 +52,13 @@
 		?>
 		
 		<?php
+		if(isset($_POST['delete'])){
+			$hapus = mysqli_query($koneksi, "DELETE FROM characters WHERE id='$id'") or die(mysqli_error($koneksi));
+			echo '<script>alert("Berhasil menghapus data."); document.location="index.php";</script>';
+		}
+		?>
+		
+		<?php
 		echo "<p><a href='logout.php'>Logout</a></p>";
 		if(isset($_POST['submit'])){
 			$p1		= $_POST['c1'];
@@ -176,6 +183,7 @@
 				<label class="col-sm-2 col-form-label">&nbsp;</label>
 				<div class="col-sm-10">
 					<input type="submit" name="submit" class="btn btn-primary" value="SIMPAN">
+					<input type="submit" name="delete" class="btn btn-danger" value="DELETE">
 					<a href="index.php" class="btn btn-warning">KEMBALI</a>
 				</div>
 			</div>
