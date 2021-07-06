@@ -16,7 +16,7 @@ module.exports = {
 		if(!args.length || !args[0]) return message.channel.send("Invalid arguments.");
 		const subcmd = args.shift()
 		const sub = subcommands[subcmd.toLowerCase()]
-		if(!sub) return message.channel.send("Your command is wrong, please use `" + config.bot.prefix + "")
+		if(!sub) return message.channel.send("Your command is wrong, please use `" + config.bot.prefix + "help`!")
 
 		const color = randomcolor_1.randomColor();
 		const hex = parseInt(color.replace(/^#/, ''), 16);
